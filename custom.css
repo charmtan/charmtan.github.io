@@ -1,0 +1,53 @@
+.my-body{
+    background-image: url(bg-coco.jpg);
+    background-repeat: repeat;
+    background-size: 20%;
+    background-attachment: fixed;
+}
+.my-jumbotron-background{
+    background-image: url(pine_02.jpg);
+    background-size: cover;
+    background-position: center;
+    color: purple;
+    text-shadow: 2px 2px 2px yellow;
+}
+.my-container{
+    background-color: lightgrey;
+}
+.my-panel-body{
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    color: green;
+}
+hr.special{
+    border-color: green; 
+    border-width: 3px 3px 3px; 
+}
+.mt-20{
+    margin-top: 20px;
+}
+.my-padding-body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.my-button-yellow{
+    background-color:rgba(1,1,1,0);
+    border-color: yellow;
+    border-width: 3px;
+    border-radius: 30px;
+    color: orangered;
+    font-weight: 900;
+    text-shadow: none;
+}
+.my-button-yellow:hover{
+    border-color: none;
+    background-color: yellow;
+    fill-opacity: 100%;
+    color: purple;
+    font-weight: 900;
+    text-shadow: none;
+    transition-duration: 1s;
+}
+div {
+    animation: example 5s linear 2s infinite alternate;
+}

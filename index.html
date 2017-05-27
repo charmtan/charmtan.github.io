@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 2px solid red;
+        }
+
+        .row [class*=' col-'] {
+            border: 5px dotted purple;
+        }
+    </style>
+
+</head>
+
+<body class='my-body'>
+    <!--main container for entire page-->
+    <div class='container my-container'style='margin-top:60px'>
+    <!--my navbar-->
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <!-- hamburger button. do not touch! -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+            <a class="navbar-brand" href="#">
+                <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                <i class="fa fa-telegram"></i>
+            </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- THIS UL HANDLES OUR LINKS -->
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="http://facebook.com">about</a></li>
+                <li><a href="http://facebook.com">gallery</a></li>
+                <!-- to make more links, make some <li> in here -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://facebook.com">login</a></li>
+                <li><a href="http://facebook.com">shopping cart</a></li>
+                <!-- to make more links, make some <li> in here -->
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!--row1: jumbotron-->
+        <div class='row'>
+            <!--full width col for all devices-->
+            <div class='col-xs-12 
+                        col-sm-12 
+                        col-md-12 
+                        col-lg-12'>
+                <div class="jumbotron my-jumbotron-background">
+                    <h1 class='wow swing'>Hello, world!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p><a class="btn btn-lg my-button-yellow" href="#" role="button">Learn more</a></p>
+                </div>
+
+            </div>
+            <!--end of col-->
+        </div>
+        <!--end of row1-->
+        <!--row2: thumbnails-->
+        <div class="row">
+            <!--col1: first thumbnail-->
+            <div class='col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 wow FadeInDown'>
+                <div class="thumbnail">
+                    <img src="citrus_01.png" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae vitae ad ab rerum amet magni voluptatem a. Quos sed nihil dolorum facere, ipsa iusto ex aut autem animi a.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+                </div>
+            </div>
+            <!--end of col1-->
+            <!--col2: second thumbnail-->
+            <div class='col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 wow FadeInDown'>
+                <div class="thumbnail">
+                    <img src="stone_01.jpg" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repellendus, quia porro blanditiis necessitatibus aperiam atque voluptatibus perspiciatis tempore sunt autem debitis laborum accusantium voluptatem laudantium ducimus, iste incidunt officia!</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+                </div>
+            </div>
+            <!--end of col2-->
+            <!--col3: third thumbnail-->
+            <div class='col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4'>
+                <div class="thumbnail">
+                    <img src="berries_01.jpg" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, enim doloribus earum error officia tempora odio nisi laboriosam fugiat perferendis praesentium, dolorem, omnis hic quibusdam expedita doloremque neque! Tempore, fuga.</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+                </div>
+            </div>
+            <!--end of col3-->
+        </div>
+        <!--end of row2-->
+        <hr class='special mt-20'>
+
+
+        <!-- row3: video -->
+        <div class="row">
+        <!-- full width column on all sizes-->
+            <div class="col-xs-12">
+            
+            <!-- responsive video -->
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/1rmo3fKeveo?autoplay=0&loop=1&playlist=1rmo3fKeveo&start=30&end=50"></iframe>
+                </div>
+            
+            </div> <!-- end col-->
+        </div> <!-- end of row3-->
+
+        <!--row4-->
+        <div class="row mt-20">
+
+            <!--left col-->
+            <div class='col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6'>
+                <div class="panel panel-default my-panel-body">
+
+                    <div class="panel-body">
+                        
+                        <form action='https://coderinyou-1332.appspot.com/submit' method='post'>
+                            
+                            <legend>This Form Is Here</legend>
+
+                             <div class='form-group'>
+                                <label for='username-id'>Name</label>
+                                <input  id='username-id' 
+                                        class='form-control'
+                                        type='text' 
+                                        name='USERNAME' 
+                                        placeholder='your name here' 
+                                        required>
+                            </div>
+
+                            <div class='form-group'>
+                                <label for='email-id'>Email</label>
+                                <input  id='email-id' 
+                                        class='form-control'
+                                        type='email' 
+                                        name='EMAIL' 
+                                        placeholder='your email here' 
+                                        required>
+                            </div>
+
+                            <div class='radio'>
+                                <label>
+                                    <input  type='radio'
+                                            name='GENDER'
+                                            value='male'>
+                                            male
+                                </label>
+                            </div>
+
+                            <div class='radio'>
+                                <label>
+                                    <input  type='radio'
+                                            name='GENDER'
+                                            value='female'>
+                                            female
+                                </label>
+                            </div>
+
+
+
+                            <div class='form-group'>
+                                <input type='submit' class='btn btn-primary'>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--end of left col-->
+
+            <!--right col-->
+            <div class='col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6 
+                        text-center'>
+        
+                    <h1 class='text-primary'>Lorem?</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi possimus atque a earum facere labore aut dolorum recusandae pariatur minima facilis, assumenda reiciendis quia sit iusto dolorem laudantium commodi eaque!</p>
+            
+            </div>
+            <!--end of right col-->
+        </div>
+        <!--end of row4-->
+        
+        <!--row5: contact info-->
+        <div class='row'>
+            <!--opening hours-->
+            <div class='col-xs-12
+                        col-sm-4
+                        mt-20'>
+                    <table class='table table-hover'>
+                        <tr class='info'>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr class='success'>
+                            <td>Monday to Thursday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr class='warning'>
+                            <td>Friday & Saturday</td>
+                            <td>11am - 3pm</td>
+                        </tr>
+                        <tr class='danger'>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+            </div>
+            <!--end of opening hours-->
+            <!--google map-->
+            <div class='col-xs-12
+                        col-sm-4 
+                        mt-20'>
+                    <div class='embed-responsive embed-responsive-4by3'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.793173070116!2d103.78545941485913!3d1.2988634620986965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a453c744d71%3A0x21a673dd9a983311!2sFusionopolis+One!5e0!3m2!1sen!2ssg!4v1495850287691" class='responsive-embed'>
+                        </iframe>
+                    </div>
+            </div>
+            <!--end of google map-->
+            <!--contact details-->
+            <div class='col-xs-12
+                        col-sm-4
+                        mt-20'>
+                      <legend>Contact me</legend>
+                    <div class='list-group'>
+                            <a href='#' class='list-group-item'>
+                                <i class='fa fa-phone fa-fw'></i>&nbsp; +65 1234 5678
+                            </a>
+                            <a href='#' class='list-group-item'>
+                                <i class='fa fa-envelope fa-fw'></i>&nbsp; hello@hello.com
+                            </a>
+                    </div>
+            </div>
+            <!--end of contact details-->
+        </div>
+        <!--end of row5-->
+
+        <!--row6: social media-->
+
+        <div class="row">
+
+            <ul class='list-inline text-center'>
+                    <li>
+                        <a href='http://www.facebook.com' target='_blank'>
+                            <i class='fa fa-facebook-square fa-3x'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='http://www.facebook.com' target='_blank'>
+                            <i class='fa fa-dropbox fa-3x' target='_blank'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='http://www.facebook.com' target='_blank'>
+                            <i class='fa fa-qq fa-3x' target='_blank'></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        <!--end of row6-->
+
+    </div>
+    <!--end of container-->
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
