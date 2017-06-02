@@ -8,7 +8,6 @@
     <!-- default bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-
     <!-- try themes from: https://startbootstrap.com/-->
     <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
@@ -23,9 +22,12 @@
 
     <!--custom css-->
     <link rel="stylesheet" href="custom.css">
+    <!--<link rel="stylesheet" href="superhero.css">-->
+     <link rel="stylesheet" href="readable.css">
+
 
     <!-- use this style for testing and development purposes -->
-    <style type="text/css">
+    <!--<style type="text/css">
         .container {
             border: 2px dotted green;
         }
@@ -37,15 +39,33 @@
         .row [class*=' col-'] {
             border: 5px dotted purple;
         }
-    </style>
+    </style>-->
 
 </head>
 
 <body class='my-body'>
     <!--main container for entire page-->
-    <div class='container my-container'style='margin-top:60px'>
-    <!--my navbar-->
-    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <!--<div class='container my-container'style='margin-top:60px'>-->
+        <!--row1: jumbotron-->
+        <div class='row'>
+            <!--full width col for all devices-->
+            <div class='col-xs-12 
+                        col-sm-12 
+                        col-md-12 
+                        col-lg-12'>
+                <div class="jumbotron my-jumbotron-background">
+                    <h1>Hello, world!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p><a class="btn btn-lg my-button-yellow" href="#" role="button">Learn more</a></p>
+                </div>
+
+            </div>
+            <!--end of col-->
+        </div>
+        <!--end of row1-->
+        <!--row1a-->
+        <div class="row">
+                <!--my navbar-->
         <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -77,25 +97,11 @@
             </div>
         </div>
         </nav>
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
 
-        <!--row1: jumbotron-->
-        <div class='row'>
-            <!--full width col for all devices-->
-            <div class='col-xs-12 
-                        col-sm-12 
-                        col-md-12 
-                        col-lg-12'>
-                <div class="jumbotron my-jumbotron-background">
-                    <h1 class='wow swing'>Hello, world!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p><a class="btn btn-lg my-button-yellow" href="#" role="button">Learn more</a></p>
-                </div>
-
-            </div>
-            <!--end of col-->
         </div>
-        <!--end of row1-->
         <!--row2: thumbnails-->
+<div class='container my-container'style='margin-top:60px'>
         <div class="row">
             <!--col1: first thumbnail-->
             <div class='col-xs-12
