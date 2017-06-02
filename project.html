@@ -68,9 +68,9 @@
     </nav>
     <!--end of navbar-->
     <div class="row">
-        <div class="jumbotron my-jumbotron my-h1 text-center wow FadeInDown">
+        <div class="jumbotron my-jumbotron text-center wow FadeInDown" id="top">
             <img src="rainbowbridge-5.svg" style='max-width:60px; margin-top: 25vh; margin-bottom: 50px;'>
-            <h1 class="my-h1" style="margin-bottom:50px; font-weight:100;">THE BRIDGE</h1>
+            <h1 class="my-h1" style="margin-bottom:50px; font-weight:100; color: #f4f1de;">THE BRIDGE</h1>
             <br>
             <br>
             <ul class='list-inline text-center'>
@@ -114,7 +114,7 @@
                                 <img src="textile.gif" alt="..." style="border-radius: 30px">
                                 <div class="caption">
                                     <h3>Turkish Textiles</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p>Turkish fabrics are unique in weaving features, materials used and designs reflecting Turkish taste. Research on the subject identified about six hundred and fifty names such as Kadife, Atlas, Gezi, Canfes, Selimiye, Hatayi, Catma, Seraser, Sevayi, etc.</p>
                                     <p><a href="#" class="btn  my-btn-primary" role="button">Browse</a></p>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                 <img src="vase.gif" alt="..." style="border-radius: 30px">
                                 <div class="caption">
                                     <h3>Vietnamese Vases</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <p>Much of Vietnamese pottery and ceramics after the Chinese-domination era was largely influenced by Chinese ceramics, but has developed over time to be distinctly Vietnamese.</p>
                                     <p><a href="#" class="btn my-btn-primary" role="button">Browse</a></p>
                                 </div>
                             </div>
@@ -142,13 +142,14 @@
                                 <img src="necklace.gif" alt="..." style="border-radius: 30px">
                                 <div class="caption">
                                     <h3>Botswanian Beads</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                    <p>Botswana agate has beautiful laces. Some of them have "natural eye". Agate with "natural eye" was highly valued as a talisman or amulet in ancient time. It was said that the Natural Eye has a connection to the god. </p>
                                     <p><a href="#" class="btn my-btn-primary" role="button">Browse</a></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <!--end of first thumbnail row-->
-                        <div class="row">
+                    <div class="row entry">
                             <div class='col-xs-12
                                                 col-sm-4
                                                 col-md-4
@@ -157,7 +158,7 @@
                                     <img src="carpenter.gif" alt="..." style="border-radius: 30px">
                                     <div class="caption">
                                         <h3>Indonesian Teak</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                        <p>Cultivation and conservation of the Teak tree in Indonesia is managed by the government of Indonesia, Perum Perhutani (Forestation Company of Government). The largest  producer of teak in  Indonesia is Java. </p>
                                         <p><a href="#" class="btn my-btn-primary" role="button">Browse</a></p>
                                     </div>
                                 </div>
@@ -171,7 +172,7 @@
                                     <img src="basket.gif" alt="..." style="border-radius: 30px">
                                     <div class="caption">
                                         <h3>Balinese Baskets</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                        <p>The craftsmanship of the Balinese and the enormous selection of materials have put Bali Rattan as one of the well known furniture supplier of many five stars hotels and resorts. </p>
                                         <p><a href="#" class="btn my-btn-primary" role="button">Browse</a></p>
                                     </div>
                                 </div>
@@ -185,13 +186,20 @@
                                     <img src="sew.gif" alt="..." style="border-radius: 30px">
                                     <div class="caption">
                                         <h3>Mosuo Textiles</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                        <p>Known to many as the 'Kingdom of Women', the Mosuo are a small ethnic group living in Yunnan and Sichuan provinces in China, close to the border with Tibet. A population of about 50,000, the Mosuo are found near Lugu Lake in the Tibetan Himalayas. </p>
                                         <p><a href="#" class="btn my-btn-primary" role="button">Browse</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <!--end of second thumbnail row-->
+
+                    <div class="text-center">
+                        <a href="#top"><img src="rainbowbridge-1.svg" style='max-width:60px; margin-top: 20px; margin-bottom: 50px;'></a>
+                    </div>
+
+
                     </div>
                     <!-- end row -->
                 </div>
@@ -279,6 +287,16 @@
                                     <input  type='checkbox'
                                             name='GENDER'
                                             value='male'>
+                                            I want to shop for local handicrafts and products.
+                                </label>
+                            </div>
+
+
+                            <div class='checkbox'>
+                                <label for="teach">
+                                    <input  type='checkbox'
+                                            name='GENDER'
+                                            value='male'>
                                             I want to teach in a local school.
                                 </label>
                             </div>
@@ -318,7 +336,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <img src="rainbowbridge-2.svg" style='max-width:60px; margin-top: 20px; margin-bottom: 50px;'>
+                <a href="#top"><img src="rainbowbridge-2.svg" style='max-width:60px; margin-top: 20px; margin-bottom: 50px;'></a>
             </div>
         </div>
 
@@ -329,17 +347,34 @@
         <div class="container">
             <div class="col-xs-12
                         col-sm-4">
-                <legend>Contact me</legend>
-                <div class='list-group'>
-                    <a href='#' class='list-group-item'>
-                                <i class='fa fa-phone fa-fw'></i>&nbsp; +65 1234 5678
-                            </a>
-                    <a href='#' class='list-group-item'>
-                                <i class='fa fa-envelope fa-fw'></i>&nbsp; hello@hello.com
-                            </a>
-                </div>
+                <h3 style="color: rgba(233, 186, 116, 1);">About Us</h3>
+                    <ul>
+                        <li><p style="color: rgba(244, 241, 222, 1);">Our Philosophy</p></li>
+                        <li><p style="color: rgba(244, 241, 222, 1);">Where we started</p></li>
+                        <li><p style="color: rgba(244, 241, 222, 1);">The Team</p></li>
+                        <li><p style="color: rgba(244, 241, 222, 1);">Join Us</p></li>
+                    </ul>
 
             </div>
+
+            <div class="col-xs-12
+                        col-sm-4">
+                <h3 style="color: rgba(233, 186, 116, 1);">Connect with Us</h3>
+                    <ul class="fa-ul">
+                        <li><a href="#"><i class="fa fa-facebook fa-2x" style="color:rgba(244, 241, 222, 1);" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram fa-2x" style="color:rgba(244, 241, 222, 1);" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus fa-2x" style="color:rgba(244, 241, 222, 1);" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12
+                        col-sm-4">
+                        
+                            <a data-pin-do="embedBoard" data-pin-board-width="150" data-pin-scale-height="500" data-pin-scale-width="60" href="https://www.pinterest.com/tanbeensparkle/the-bridge/"></a> 
+            </div>
+
         </div>
     </div>
     <!--end of footer-->
@@ -349,6 +384,7 @@
         new WOW().init();
     </script>
     <script type="text/javascript" src="javascript/index.js"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 
 </html>
