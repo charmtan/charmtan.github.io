@@ -57,7 +57,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #3d405b;
 }
 .my-jumbotron{
-    background: url(hands.jpg);
+    background: url(hands.gif);
     background-size: cover;
     background-position: center;
     margin-top: none;
