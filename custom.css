@@ -88,7 +88,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .my-btn-secondary{
     color:  rgba(224, 122, 95, 1);
-    background-color: rgba(233, 186, 116, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     border-color: rgba(224, 122, 95, 1);
     border-width: 3px;
     border-radius: 30px;
@@ -142,7 +142,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 }
 .row-special{
-    background-color:rgba(238, 121, 84, 0.7);
+    background-color:rgba(238, 121, 84, 0.5);
 }
 .magnifier {
 	background:#000000;
@@ -205,3 +205,14 @@ p, h1, h2, h3, h4, h5, h6 {
     .my-progress-bar{
         background-color: rgba(233, 186, 116, 1);
     }
+.my-footer{
+    background-color:rgba(75, 118, 116, 1);
+    color: rgba(244, 241, 222, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.my-form{
+    background-color: rgba(244, 241, 222, 1);
+    font-family: 'Raleway', sans-serif;
+    border: none;
+}
